@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link id="pagestyle" rel="stylesheet" type="text/css" href="encription.css">
+		<title>DESIGN PAGE</title>
+		
+	</head>
+	<body>
+		<div id="outerNotBody">
+			<div id="notBody">
+
+				<h1 id="heading">
+					THIS IS THE HEADING
+				</h1>
+					<div id="baitAbout"  >
+						<div id="bait">IF YOU HOVER OVER THIS, HIDDEN INFO WILL APPPEAR</div>	
+						<div id="about">
+							This is here so that when you read the information it is in the centerof the screen and when you have finnished reading it the cipher input method is centered.</div>
+					</div>	
+
+				<div id="input_area">
+					<textarea rows="1" cols="50" autofocus id = "message"> THIS IS FOR TEXT INPUT</textarea>
+				</div>
+				<div id="button_area">
+					<button type="button" onclick="encode()" id="encode_button">THIS IS FOR ENCODING
+					</button>
+					<button type="button" onclick="decode()" id="decode_button"> THIS IS FOR DECODING
+					</button>
+				</div>
+				<div id="output_area">
+					<p>
+						THIS IS WHERE YOUR MESSAGE IS OUTPUT.<br />
+					<div id="output"></div>
+				</p>
+				</div>
+				<button id="color_blind_mode" onclick="color_change()">Color Blind Mode</button>
+				<script type="text/javascript" src="color_change.js"></script>
+				<script type="text/javascript" src="caesar.js"></script>
+			</div>
+				<div id="dropdown">
+					<div id="logo"><a  href="index.html"> <img src="logo.png"/></div>
+
+					<div id="hiddenMenu">
+						<ul>
+							<li id="caesar"><a  href="caesar.html">Caesar Encryption</a> </li>
+							<li id="enc2"><a href="reverse.html">Reverse Encryption</a></li>
+							<li id="enc3"><a href="morse_code.html"> Morse Code</a></li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</body>
+</html> 

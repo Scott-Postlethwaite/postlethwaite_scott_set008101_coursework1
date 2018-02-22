@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link id="pagestyle" rel="stylesheet" type="text/css" href="encription.css">
+		<title>Caesar Encoder</title>
+	</head>
+	<body>
+	<div id="outerNotBody">
+		<div id="notBody">
+
+			<h1 id="heading">
+				Caesar Cipher
+			</h1>
+			<div id="baitAbout"  >
+				<div id="bait">About Caesar...</div>	
+					<div id="about">
+					In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
+
+					The encryption step performed by a Caesar cipher is often incorporated as part of more complex schemes, such as the Vigenère cipher, and still has modern application in the ROT13 system. As with all single-alphabet substitution ciphers, the Caesar cipher is easily broken and in modern practice offers essentially no communication security.
+					</div>
+				</div>	
+				<div id="rotation">
+					<textarea rows="1" cols="50" autofocus id="rotations"> Enter the number of rotations</textarea>
+				</div>
+				
+				<div id="input_area">
+					<textarea rows="1" cols="50" autofocus id = "message"> Type your secret message here</textarea>
+				</div>
+				<div id="button_area">
+					<button type="button" onclick="encode()" id="encode_button"> Encode Everything
+					</button>
+					<button type="button" onclick="decode()" id="decode_button"> Decode Everything
+					</button>
+				</div>
+				<div id="output_area">
+					<p>
+						This is your encoded message:<br />
+						<div id="output"></div>
+					</p>
+				</div>
+				<button id="color_blind_mode" onclick="color_change()">Color Blind Mode</button>
+				<script type="text/javascript" src="color_change.js"></script>
+				<script type="text/javascript" src="caesar.js"></script>
+		</div>
+		<div id="dropdown">
+			<div id="logo"><a  href="index.html"> <img src="logo.png"/></div>
+
+				<div id="hiddenMenu">
+					<ul>
+						<li id="caesar"><a  href="caesar.html">Caesar Encryption</a> </li>
+						<li id="enc2"><a href="reverse.html">Reverse Encryption</a></li>
+						<li id="enc3"><a href="morse_code.html"> Morse Code</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html> 

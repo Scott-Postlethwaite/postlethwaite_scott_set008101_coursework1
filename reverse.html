@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link id="pagestyle" rel="stylesheet" type="text/css" href="encription.css">
+		<title>Reverse Encoder</title>
+		
+	</head>
+	<body>
+	<div id="outerNotBody">
+		<div id="notBody">
+
+			<h1 id="heading">
+				Reverse Encryption
+			</h1>
+				<div id="baitAbout"  >
+				<div id="bait">About Reverse...</div>	
+				<div id="about">
+				The reverse encryption is a basic example of a substitution cipher. 
+				This involves two alphabets: Your message starts life going from A-Z but each letter is replaced with the corresponding letter in a flipped alphabet going from Z-A. 
+				For Example: ABC > ZYX</div>
+	</div>	
+			<div id="input_area">
+				<textarea rows="1" cols="50" autofocus id = "message"> Type your secret message here</textarea>
+			</div>
+			<div id="button_area">
+				<button type="button" onclick="encode()" id="encode_button"> Encode Everything
+				</button>
+				<button type="button" onclick="decode()" id="decode_button"> Decode Everything
+				</button>
+			</div>
+			<div id="output_area">
+			<p>
+			This is your encoded message:<br />
+			<div id="output"></div>
+			</p>
+			</div>
+			<button id="color_blind_mode" onclick="color_change()">Color Blind Mode</button>
+	<script type="text/javascript" src="color_change.js"></script>
+			<script type="text/javascript" src="reverse.js"></script>
+			</div>
+			<div id="dropdown">
+				<div id="logo"><a  href="index.html"> <img src="logo.png"/></div>
+
+				<div id="hiddenMenu">
+					<ul>
+						<li id="caesar"><a  href="caesar.html">Caesar Encryption</a> </li>
+						<li id="enc2"><a href="reverse.html">Reverse Encryption</a></li>
+						<li id="enc3"><a href="morse_code.html"> Morse Code</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html> 

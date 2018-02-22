@@ -1,0 +1,78 @@
+body{
+	background-color:black;
+}
+
+#outerNotBody
+{
+	border:solid 5px gray;
+	border-radius:50px;
+	position:relative;
+	background-color:white;	
+}
+
+#notBody{
+	margin: 0 auto;
+	max-width:40%;
+	padding-top:50px;
+	padding-bottom:415px;
+	display:block;
+}
+#dropdown{
+	
+    position: fixed;
+    top: 30px;
+    left: 100px;
+	display:inline-block;
+}
+
+#hiddenMenu{
+	display: none;
+    position: absolute;
+}
+
+
+#dropdown:hover #hiddenMenu{
+	display:inline-block;
+}
+
+ul {
+	list-style-image: url('logo2.png');
+	margin:auto;
+}
+
+#aboutCaesar{display:none;}
+#aboutEnc2{display:none;}
+#aboutEnc3{display:none;}
+
+#caesar:hover ~ #aboutCaesar{display:inline;}
+#enc2:hover ~ #aboutEnc2{display:inline;}
+#enc3:hover ~ #aboutEnc3{display:inline;}
+
+a:link{
+    color:black;
+	text-decoration: none;
+}
+
+a:visited {
+    color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#bait{
+	border: solid black;
+	border-radius: 25px;
+    padding: 10px; 
+    width: 100px;}
+
+#about{ display: none;}
+
+#baitAbout:hover #about {display:inline;} 
+
+#color_blind_mode{ position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
